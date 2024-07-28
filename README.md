@@ -5,6 +5,21 @@ Developed by [Anar Lavrenov, Head of AI at SPUNCH](https://www.linkedin.com/in/a
 For now ExpressNet is made for binary/multi classification tasks and there are plans for adding other tasks as well.
 The main distinguishing feature of this model is high perfomance without text preprocessing. 
 
+# Quick Start
+```py
+!git clone https://github.com/anarlavrenov/ExpressNet
+%cd ExpressNet
+from ExpressNet.model import ExpressNet
+
+model = ExpressNet(
+    d_model=256,
+    vocab_size=len(vocab),
+    classification_type="multiclass",
+    n_classes=4
+).to(device)
+```
+
+
 # Validation
 ExpressNet showed decent results on validatation on most of torchtext datasets.
 General parameters were used:
