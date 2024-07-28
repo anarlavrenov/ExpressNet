@@ -41,4 +41,4 @@ General parameters were used:
 # Usage
 
 1. Primararly usage: playground for Machine Learning Researches and Data Scientists. You are very welcome to share your insights and recommendations.
-2. Baseline for most of NLP tasks without any text preprocessing. If you want to achieve high validation accuracy without boring text preprocessing - you are welcome to use ExpressNet. 
+2. Baseline for most of classification tasks without any text preprocessing. If you want to achieve instant high validation accuracy - you are welcome to use ExpressNet. 
