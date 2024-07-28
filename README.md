@@ -5,12 +5,20 @@ Developed by [Anar Lavrenov, Head of AI at SPUNCH](https://www.linkedin.com/in/a
 For now ExpressNet is made for binary/multi classification tasks and there are plans for adding other tasks as well.
 The main distinguishing feature of this model is high perfomance without text preprocessing. 
 
-# Quick Start
+# Quick Start in Google Colab
+
+Clone this repository
 ```py
 !git clone https://github.com/anarlavrenov/ExpressNet
 %cd ExpressNet
+```
+Import model
+```py
 from ExpressNet.model import ExpressNet
+```
 
+Initialize model
+```py
 model = ExpressNet(
     d_model=256,
     vocab_size=len(vocab),
