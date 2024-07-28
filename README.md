@@ -1,6 +1,6 @@
 # ExpressNet
 
-![image](https://github.com/anarlavrenov/ExpressNet/blob/master/logo.webp)
+![image](https://github.com/anarlavrenov/ExpressNet/blob/master/logo.png)
 
 ExpressNet is an autoregressive BiLSTM-based decoder-only model with Additive Attention Mechanism (Bahdanau Attention). 
 Developed by [Anar Lavrenov, Head of AI at SPUNCH](https://www.linkedin.com/in/anar-lavrenov/).
