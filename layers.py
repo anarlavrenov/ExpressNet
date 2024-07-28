@@ -3,9 +3,9 @@ import torch
 
 class LinearLayer(torch.nn.Module):
     """
-  Спеціальний лінійний шар, який використовується в Bahdanau Attention і загальній моделі.
+    A special linear layer used in Bahdanau Attention and the overall model.
 
-  """
+    """
 
     def __init__(self, in_features, out_features):
         super(LinearLayer, self).__init__()
@@ -26,9 +26,9 @@ class LinearLayer(torch.nn.Module):
 
     def xavier_uniform_(self, gain=1):
         """
-    Кастомна функція ініціалізації вагів методом xavier uniform
+    Custom weight initialization function using the Xavier uniform method.
     Args:
-      gain: множник активації Sigmoid
+      gain: Sigmoid activation multiplier
     """
 
         out_features, in_features = self.weights.size()
@@ -39,7 +39,7 @@ class LinearLayer(torch.nn.Module):
 
     def forward(self, x):
         """
-    За формулою лінійного шару, дані, що надходять, помножаються на транспоновані weights, після чого додається bias.
+    According to the linear layer formula, the incoming data is multiplied by the transposed weights, followed by the addition of the bias.
 
     """
         if x.dim() == 2:
@@ -55,7 +55,7 @@ class LinearLayer(torch.nn.Module):
 
         else:
             raise ValueError(
-                "Вхідний тензор повинен мати розмірність 2D або 3D, проте поступив {}D тензор".format(x.dim()))
+                "The input tensor must have a dimension of 2D or 3D, but a {}D tensor was received.".format(x.dim()))
 
         return x_times_w_plus_b
 

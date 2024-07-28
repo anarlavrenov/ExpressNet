@@ -6,10 +6,11 @@ class ExpressNet(torch.nn.Module):
     """
 
   Attributes:
-    pre_lstm: шар LSTM, який приймає в себе початкові ембединги в якості тензора.
-    post_lstm: шар LSTM, який приймає в себе в якості тензора конкатенацію контекстного вектору після BahdanauAttention та початкові ембединги.
-    fc: кастомізований лінійний шар.
-    bahdanau_attention: шар уваги, який приймає в себе короткострокову пам'ять всіх комірок LSTM та короткострокову пам'ять тільки останньої комірки.
+    pre_lstm: LSTM layer that takes the initial embeddings as a tensor.
+    post_lstm: LSTM layer that takes the concatenation of the context vector after BahdanauAttention and the initial embeddings as a tensor.
+    fc: customized linear layer.
+    bahdanau_attention: attention layer that takes the short-term memory of all LSTM cells and the short-term memory of only the last cell.
+
   """
 
     def __init__(self, d_model, vocab_size, classification_type: str, n_classes=None, recurrent_dropout=0.2):
@@ -63,7 +64,7 @@ class ExpressNet(torch.nn.Module):
       x: torch.Tensor(batch_size, seq_len).
 
     Returns:
-      torch.Tensor(batch_size, n_classes), де n_classes - це логіти класу.
+      torch.Tensor(batch_size, n_classes), where n_classes - is class logits.
     """
         embedded = self.embedding(x)  # [batch_size, seq_len, d_model]
         embedded = self.dp(embedded)
