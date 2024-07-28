@@ -17,7 +17,7 @@ Import model
 from ExpressNet.model import ExpressNet
 ```
 
-Initialize model
+Initialize model with your own hyperparameters
 ```py
 model = ExpressNet(
     d_model=256,
