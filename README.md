@@ -7,8 +7,7 @@ For now this model is made for binary/multi classification tasks and I have plan
 This model was tested on most torchtext.datasets as a benchmark.
 General parameters were used:
 1. No text preprocessing at all: no stopwords removal, no lemmatization etc.
-2. ```py
-   basic english torch tokenizer
+2. `basic english` torch tokenizer
 3. d_model: 256 everywhere
 
 ![image](https://github.com/anarlavrenov/ExpressNet/blob/master/benchmark.png)
