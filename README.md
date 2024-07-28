@@ -1,10 +1,11 @@
 # ExpressNet
 
-ExpressNet is an autoregressive BiLSTM-based decoder-only model with Additive Attention Mechanism (Bahdanau Attention) . 
-Developed by [Anar Lavrenov, Head of AI at SPUNCH](https://www.linkedin.com/in/anar-lavrenov/)
-For now this model is made for binary/multi classification tasks and I have plans for other tasks implementation as well.
+ExpressNet is an autoregressive BiLSTM-based decoder-only model with Additive Attention Mechanism (Bahdanau Attention). 
+Developed by [Anar Lavrenov, Head of AI at SPUNCH](https://www.linkedin.com/in/anar-lavrenov/).
+For now this model is made for binary/multi classification tasks and there are plans for adding other tasks as well.
 
-This model was tested on most torchtext.datasets as a benchmark.
+# Validation
+ExpressNet showed decent results on validatation on most of torchtext datasets.
 General parameters were used:
 1. No text preprocessing at all: no stopwords removal, no lemmatization etc.
 2. `basic english` torch tokenizer
@@ -13,4 +14,6 @@ General parameters were used:
 ![image](https://github.com/anarlavrenov/ExpressNet/blob/master/benchmark.png)
 
 
+# Usage
 
+1. Primararly usage: 
