@@ -8,7 +8,7 @@ For now ExpressNet is made for binary/multi classification tasks and there are p
 The main distinguishing feature of this model is high perfomance without text preprocessing. 
 
 # Architecture
-![image](https://github.com/anarlavrenov/ExpressNet/blob/master/architecture.png)
+![image](https://github.com/anarlavrenov/ExpressNet/blob/master/model_scheme.png)
 
 
 # Quick Start in Google Colab [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/anarlavrenov/ExpressNet/blob/master/usage.ipynb)
