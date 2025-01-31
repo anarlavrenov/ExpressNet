@@ -33,13 +33,16 @@ class LinearLayer(torch.nn.Module):
 
         out_features, in_features = self.weights.size()
 
-        a = gain * torch.sqrt(torch.tensor(6, dtype=torch.float32) / (in_features + out_features))
+        a = gain * torch.sqrt(
+            torch.tensor(6, dtype=torch.float32) / (in_features + out_features))
         with torch.no_grad():
-            self.weights.uniform_(-a, a)
+            self.weights.uniform_(-a.item(), a.item())
 
     def forward(self, x):
         """
-    According to the linear layer formula, the incoming data is multiplied by the transposed weights, followed by the addition of the bias.
+    According to the linear layer formula,
+    the incoming data is multiplied by the transposed weights,
+    followed by the addition of the bias.
 
     """
         if x.dim() == 2:
@@ -55,7 +58,9 @@ class LinearLayer(torch.nn.Module):
 
         else:
             raise ValueError(
-                "The input tensor must have a dimension of 2D or 3D, but a {}D tensor was received.".format(x.dim()))
+                "The input tensor must have a dimension of 2D or 3D, "
+                "but a {}D tensor was received.".format(x.dim())
+            )
 
         return x_times_w_plus_b
 
