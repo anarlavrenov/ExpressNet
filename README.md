@@ -1,9 +1,15 @@
 # ExpressNet
 
+![image](https://github.com/anarlavrenov/ExpressNet/blob/master/logo.png)
+
 ExpressNet is an autoregressive BiLSTM-based decoder-only model with Additive Attention Mechanism (Bahdanau Attention). 
 Developed by [Anar Lavrenov, Head of AI at SPUNCH](https://www.linkedin.com/in/anar-lavrenov/).
 For now ExpressNet is made for binary/multi classification tasks and there are plans for adding other tasks as well.
 The main distinguishing feature of this model is high perfomance without text preprocessing. 
+
+# Architecture
+![image](https://github.com/anarlavrenov/ExpressNet/blob/master/model_scheme.png)
+
 
 # Quick Start in Google Colab [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/anarlavrenov/ExpressNet/blob/master/usage.ipynb)
 
@@ -38,7 +44,7 @@ General parameters were used:
 ![image](https://github.com/anarlavrenov/ExpressNet/blob/master/benchmark.png)
 
 
-# Usage
+# Usage Purposes
 
-1. Primararly usage: playground for Machine Learning Researches and Data Scientists. You are very welcome to share your insights and recommendations.
-2. Baseline for most of classification tasks without any text preprocessing. If you want to achieve instant high validation accuracy - you are welcome to use ExpressNet. 
+1. Primarily usage: playground for Machine Learning Researches and Data Scientists. You are very welcome to share your insights and recommendations.
+2. Secondary usage: baseline for most of classification tasks without any text preprocessing. If you want to achieve instant high validation accuracy - you are welcome to use ExpressNet. 
